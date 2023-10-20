@@ -1,30 +1,32 @@
 
 
-# Create some example files
+
+# Create the initial Processing.py file
 touch Processing.py
-touch Processing_no_baseline.py
-touch Processing_no_baseline_final.py
-touch Processing_final_for_real.py
-touch Processing_final_for_real_real.py
+
+# Initialize a new Git repository
 
 
+# Stage and commit the initial file
+git add Processing.py
+git commit -m "Initial commit: Add Processing.py"
 
-# Stage and commit the initial files
-git add .
-git commit -m "Initial commit: Add example files"
+# Edit Processing.py and commit with a message based on the filename
+# Edit Processing.py for the "no_baseline" version
+echo "Making changes for no_baseline" >> Processing.py
+git commit -am "no_baseline"
 
-# Make changes to your files and commit for each change
-# Modify Processing.y
-echo "Some changes in Processing.y" >> Processing.y
-git add Processing.y
-git commit -m "Update Processing.y: Describe the changes made"
+# Edit Processing.py for the "no_baseline_final" version
+echo "Making changes for no_baseline_final" >> Processing.py
+git commit -am "no_baseline_final"
 
-# Modify Processing_no_baseline.py
-echo "Some changes in Processing_no_baseline.py" >> Processing_no_baseline.py
-git add Processing_no_baseline.py
-git commit -m "Update Processing_no_baseline.py: Describe the changes made"
+# Edit Processing.py for the "final_for_real" version
+echo "Making changes for final_for_real" >> Processing.py
+git commit -am "final_for_real"
 
-# Continue this process for each file change you want to represent as a commit
+# Edit Processing.py for the "final_for_real_real" version
+echo "Making changes for final_for_real_real" >> Processing.py
+git commit -am "final_for_real_real"
 
 # Visualize the commit history as a graph
 git log --graph --oneline --all --decorate
